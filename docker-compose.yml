@@ -1,0 +1,12 @@
+# Used by Dokploy ("raw" compose). Builds straight from this GitHub repo.
+# Replace REPO_NAME below with the new repo's name when you create an MCP from this template.
+services:
+  mcp:
+    build:
+      context: https://github.com/Caceras/REPO_NAME.git#main
+    restart: unless-stopped
+    environment:
+      MCP_NAME: ${MCP_NAME}
+      MCP_TITLE: ${MCP_TITLE}
+      MCP_ICON_URL: ${MCP_ICON_URL:-}
+    # Put API keys etc. in Dokploy's "Environment" tab, never in this repo.
