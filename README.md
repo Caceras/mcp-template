@@ -1,5 +1,14 @@
 # Host4AI MCP template
 
+> **TRANSITIONAL — do not use this repository to create new production MCPs yet.**
+>
+> This template still reflects the older SDK v1 / secret-path deployment model.
+> The current Host4AI target is official MCP SDK 2026-07-28 semantics, standard
+> OAuth/CIMD authorization, canonical non-secret URLs, generated metadata/icons,
+> and declarative deployment verification. Existing users may remain compatible
+> during migration, but new integrations should be added to `Caceras/connectors`
+> until this template is rebuilt from the final shared contracts.
+
 Starter kit for a new MCP server (a small web service that gives Claude and ChatGPT new tools).
 Every MCP built from this works in **both Claude (Connectors) and ChatGPT (Plugins)**.
 
